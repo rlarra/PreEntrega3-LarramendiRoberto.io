@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAUTYBARBER</title>
+    <style>
+     body {
+        background-color: #000;
+        color: #fff;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow-y: auto;
+      }
+
+      main {
+        text-align: left;
+        max-width: 90%;
+        margin: 20px auto 10px; /* Ajuste de margen */
+        padding: 10px; /* Ajuste de padding */
+      }
+
+      .title {
+        color: #fada5e;
+        font-size: 6vw;
+        font-weight: bold;
+        margin-bottom: 10px; /* Reducción del espacio inferior */
+      }
+
+      .payment-info {
+        margin-bottom: 10px; /* Reducción del espacio inferior */
+      }
+
+      .prices-container {
+        background-color: #fada5e;
+        padding: 5%;
+        border-radius: 10px;
+        max-height: 60vh;
+        overflow-y: auto;
+      }
+
+      h1,
+      h2 {
+        margin: 10px 0;
+        color: #000;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        padding: 10px;
+      }
+
+      footer p {
+        color: #fff;
+        margin: 0;
+      }
+
+      /* Estilos para el botón de regreso */
+      .back-to-home {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      /* Media query para ajustar estilos en pantallas pequeñas */
+      @media (max-width: 600px) {
+        .title {
+          font-size: 10vw;
+        }
+
+        .prices-container {
+          max-height: 80vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Botón de regreso a la página de inicio (HOME) -->
+    <a href="http://127.0.0.1:5500/index.html" class="back-to-home"
+      >Regresar a HOME</a
+    >
+
+    <main class="centered">
+      <div class="title">LAUTYBARBER</div>
+      <div class="payment-info">
+        <p>
+          En LAUTYBARBER, nos mantenemos informados sobre las fluctuaciones
+          económicas del país, y nos esforzamos por brindarte opciones que se
+          adapten a tu presupuesto. Queremos informarte que ofrecemos diversas
+          modalidades de pago para tu conveniencia, incluyendo:
+        </p>
+        <ul>
+          <li>Efectivo</li>
+          <li>Transferencia bancaria</li>
+          <li>Mercado Pago</li>
+          <li>Cuenta DNI</li>
+        </ul>
+        <p>
+          Estamos comprometidos a brindarte flexibilidad y comodidad en tus
+          transacciones, asegurándonos de que encuentres la opción que mejor se
+          ajuste a tus necesidades.
+        </p>
+      </div>
+      <div class="prices-container">
+        <h1>💵 PRECIOS 💵</h1>
+        <h2>CORTE DE CABELLO ------------ 💲4000</h2>
+        <h2>CORTE Y BARBA ------------------ 💲5000</h2>
+        <h2>LINEAS DE DISEÑO --------------- 💲500</h2>
+        <h2>PERFILADO DE CEJAS----------- 💲500</h2>
+        <h2>BARBA -------------------------------- 💲2500</h2>
+      </div>
+    </main>
+
+    <footer>
+      <p>Pedro Ferre 13, Isidro Casanova (CP1757)</p>
+      <p>Tel: (011) 456-7890 / 4056-7890</p>
+    </footer>
+  </body>
+</html>

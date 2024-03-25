@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAUTYBARBER</title>
+    <style>
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; 
+        }
+
+        h1, h2, p, ul {
+            margin: 10px 0;
+            color: hwb(61 2% 2%);
+            font-size: 35px;
+            -webkit-text-stroke: 1px black; 
+            text-align: center;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%; /* Cambiamos el ancho del iframe para que ocupe todo el contenedor */
+            max-width: 600px; /* Establecemos un ancho máximo para evitar que el mapa sea demasiado grande */
+            height: 450px; /* Establecemos una altura fija */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('img/Captura de pantalla 2024-02-05 180016.png');
+            background-size: cover; /* Utilizamos cover para asegurarnos de que la imagen de fondo cubra toda la pantalla */
+            min-height: 100vh;
+            margin-bottom: 50px;
+        }
+
+        /* Estilos para el botón de regreso */
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Media query para pantallas más pequeñas */
+        @media screen and (max-width: 768px) {
+            h1, h2, p, ul {
+                font-size: 24px; /* Reducimos el tamaño de la fuente en pantallas más pequeñas */
+            }
+        }
+
+    </style>
+</head>
+<body>
+     <!-- Botón de regreso a la página de inicio (HOME) -->
+     <a href="http://127.0.0.1:5500/index.html" class="back-to-home">Regresar a HOME</a>
+
+    <main>
+        
+        <h1>COMO LLEGAR A LA BARBERIA?</h1>
+        <h2>Pedro Ferre 13, Isidro Casanova. Buenos aires</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.2414317861208!2d-58.602396825082835!3d-34.69908997292022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc65ff6c2d669%3A0xffc5d8790f2ab349!2sGYA%2C%20Pedro%20Ferr%C3%A9%2013%2C%20B1765%20Isidro%20Casanova%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707090002011!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+
+        <h2>Ubicación</h2>
+        <p>LAUTYBARBER está estratégicamente ubicada para tu conveniencia:</p>
+        <ul>
+          <h3>A solo 10 cuadras de la reconocida Ruta 3.</h3>
+          <h3>A escasos 15 metros de la transitada Av. Cristiania.</h3>
+          <h3>Con fácil acceso mediante las siguientes líneas de colectivos: 174, 96, 63, 45, 89, 78.</h3>
+        </ul>
+        <p>Nos enorgullece ofrecerte una ubicación cómoda y accesible para que disfrutes de nuestros servicios de barbería con la mayor comodidad.</p>
+        
+    </main>
+</body>
+</html>
